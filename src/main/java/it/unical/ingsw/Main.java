@@ -8,6 +8,7 @@ import okhttp3.OkHttpClient;
 public class Main {
 
 	public static void main(String[] args) {
+
 		
 		ApiClient hClient = new OKHttpApiClientImpl("https://randommer.io/", new OkHttpClient());
 		MyMath m = new MyMath(new ConnectionMonitorImpl(), hClient);
