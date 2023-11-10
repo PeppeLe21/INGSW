@@ -56,4 +56,13 @@ public class AlgoritmoTest
         //System.out.println(ora);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void shouldCharInString(){
+        //DateTime ora  = new DateTime();
+        //System.out.println(ora);
+        System.out.println("shouldCharInStringException");
+        f.stringToIntConverter("2s343");
+        //System.out.println(ora);
+    }
+
 }
